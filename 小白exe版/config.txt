@@ -6,6 +6,7 @@
 "users": ["####"],
 # 模板id
 "template_id": "####",
+# 查询:https://img.weather.com.cn/newwebgis/fc/nation_fc24h_wea_2022010420.json
 # 城市id
 "city_id": "####",
 # 城市疫情
