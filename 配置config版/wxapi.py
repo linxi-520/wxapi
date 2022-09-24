@@ -63,7 +63,7 @@ def cqyq():
     except:print('[INFO]疫情模块加载失败,请重新调试')
 
 # 获取温度
-def weather(city_id):
+def get_weather(city_id):
     # 时间戳
     t = (int(round(time() * 1000)))
     headers = {
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     # 公众号推送消息
     for user in users:
         # 传入省份和市获取天气信息
-        city_name, weather, max_wd, min_wd,shidu,tips = weather(city_id)
+        city_name, weather, max_wd, min_wd,shidu,tips = get_weather(city_id)
         send(template_id,user, access_token, city_name, weather, max_wd, min_wd,shidu,tips, yy,cqyq)
     os.system("pause")
     sys.exit(1)
